@@ -1,6 +1,6 @@
 # Cyprus Municipal Boundaries rendered on Google Maps
 ### Tested up to: Wordpress 5.4
-**License: GPLv2 or later**
+**License: GPLv2 or later**  
 **License URI: http://www.gnu.org/licenses/gpl-2.0.html**
 
 This plugin renders current Cyprus Municipal Boundaries on Google Map based on an optimised set of KML data from [OpenDataCy](https://www.data.gov.cy).
