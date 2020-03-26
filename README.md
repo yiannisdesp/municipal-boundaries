@@ -1,23 +1,18 @@
-=== Cyprus Municipal Boundaries renred===
-Tested up to: 5.4
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Cyprus Municipal Boundaries renred===
+### Tested up to: 5.4
+#### License: GPLv2 or later
+#### License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Renders current Municipal Boundaries on Google Map based on KML data.
+*Renders current Municipal Boundaries on Google Map based on KML data.*
 
-== Description ==
+#### Installation
 
-Renders current Municipal Boundaries on Google Map based on KML data.
+- Upload `municipal-boundaries.zip` to the `/wp-content/plugins/` directory and extract all the files
+- Activate the plugin through the 'Plugins' menu in WordPress
+- In the related options page (under 'Settings' menu), insert the Google Maps API key from your Console  
+- Place `<?php do_shortcode('[municipal-boundaries-map]'); ?>` in your templates or `[municipal-boundaries-map]` in your editor
 
-== Installation ==
+*Changelog*
 
-This section describes how to install the plugin and get it working.
-
-1. Upload `municipal-boundaries.zip` to the `/wp-content/plugins/` directory and extract all the files
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_shortcode('[municipal-boundaries-map]'); ?>` in your templates or `[municipal-boundaries-map]` in your editor
-
-== Changelog ==
-
-= 1.0 =
+**v1.0**
 * port of yiannisdesp/ucmmap into wordpress plugin
