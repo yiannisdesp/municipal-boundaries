@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var _ucmmap = function () {
 	var map,
@@ -90,10 +90,15 @@ var _ucmmap = function () {
 			}
 		},
 		legendHTML = '',
+		zoomSet = false,
 		showDistrict = function showDistrict(lat, lng) {
 			var center = new google.maps.LatLng(lat, lng);
 			map.panTo(center);
-			map.setZoom(10);
+
+			if (!zoomSet) {
+				map.setZoom(11);
+				zoomSet = true;
+			}
 		},
 		render = function render() {
 			map = new google.maps.Map(document.getElementById('map'), {
@@ -110,17 +115,22 @@ var _ucmmap = function () {
 					map: map
 				}); // generate legend html
 
-				legendHTML += "\n\t\t\t\t<div class=\"item\">\n\t\t\t\t\t<a href=\"#\" class=\"maplink\" data-lat=\"".concat(districts[k].latlng.lat, "\" data-lng=\"").concat(districts[k].latlng.lng, "\">\n\t\t\t\t\t\t").concat(districts[k].name[lang], "\n\t\t\t\t\t</a>\n\t\t\t\t</div>\n\t\t\t");
-			} // render generated legend markup
+				legendHTML += "\n                <div class=\"item\">\n                    <a href=\"#\" class=\"maplink d-".concat(k, "\" data-lat=\"").concat(districts[k].latlng.lat, "\" data-lng=\"").concat(districts[k].latlng.lng, "\">\n                        ").concat(districts[k].name[lang], "\n                    </a>\n                </div>\n            ");
+			}
 
+			legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><i>OpenDataCy</i></div>'; // render generated legend markup
 
 			document.getElementById('legend').innerHTML = legendHTML; // bind generated links with click event
 
 			setTimeout(function () {
-				document.querySelectorAll('a.maplink').forEach(function(node) {
+				document.querySelectorAll('.mmap-wrap a.maplink').forEach(function (node) {
 					node.addEventListener('click', function (e) {
 						e.preventDefault();
 						showDistrict(this.dataset.lat, this.dataset.lng);
+						document.querySelectorAll('.mmap-wrap .item').forEach(function (node) {
+							node.classList.remove('active');
+						});
+						this.parentNode.classList.add('active');
 					});
 				});
 			}, 500);

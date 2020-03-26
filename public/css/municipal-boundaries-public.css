@@ -1,14 +1,23 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .mmap-wrap {
     clear: both;
     width: 100%!important;
     max-width: 100%!important;
+    float: left;
 }
 .mmap-wrap .legend-container,
 .mmap-wrap .map-container {
     height: 600px;
     overflow: hidden;
     float: left;
-    border: 1px solid #2b3481;
+    /* border: 1px solid #2b3481; */
 }
 .mmap-wrap .map-container {
     width: 80%;
@@ -19,9 +28,31 @@
 .mmap-wrap .legend-container > .item {
     width: 100%;
     text-align: center;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
 }
-.mmap-wrap .legend-container > .item:hover {
+
+.mmap-wrap .legend-container > .item > a {
+    width: 100%;
+    display: block;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.mmap-wrap .legend-container > .item > .d-lefkosia { border: 2px solid #a4c29a; }
+.mmap-wrap .legend-container > .item > .d-ammochostos { border: 2px solid #a09996; }
+.mmap-wrap .legend-container > .item > .d-keryneia { border: 2px solid #eda2a0; }
+.mmap-wrap .legend-container > .item > .d-paphos { border: 2px solid #ebe79e; }
+.mmap-wrap .legend-container > .item > .d-lemesos { border: 2px solid #c6ae9e; }
+.mmap-wrap .legend-container > .item > .d-larnaka { border: 2px solid #a49de4; }
+
+.mmap-wrap .legend-container > .item.active > .d-lefkosia { font-weight: bold; background-color: #a4c29a; }
+.mmap-wrap .legend-container > .item.active > .d-ammochostos { font-weight: bold; background-color: #a09996; }
+.mmap-wrap .legend-container > .item.active > .d-keryneia { font-weight: bold; background-color: #eda2a0; }
+.mmap-wrap .legend-container > .item.active > .d-paphos { font-weight: bold; background-color: #ebe79e; }
+.mmap-wrap .legend-container > .item.active > .d-lemesos { font-weight: bold; background-color: #c6ae9e; }
+.mmap-wrap .legend-container > .item.active > .d-larnaka { font-weight: bold; background-color: #a49de4; }
+
+.mmap-wrap .legend-container > .item:hover > a {
     background-color: #2b3481;
 }
 .mmap-wrap .legend-container .item > a {
