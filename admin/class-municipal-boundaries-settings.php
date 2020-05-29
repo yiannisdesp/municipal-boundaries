@@ -68,6 +68,14 @@ class Municipalities_Boundaries_Admin_Settings
             $this->plugin_name . '-opt',
             $this->plugin_name . '-opt-section'
         );
+
+        add_settings_field(
+            'municipal_bound_github_access_token',
+            'Updater Access Token',
+            [$this, 'renderUpdaterAccessTokenInput'],
+            $this->plugin_name . '-opt',
+            $this->plugin_name . '-opt-section'
+        );
     }
 
     public function validateOptions($inputs)
@@ -82,6 +90,12 @@ class Municipalities_Boundaries_Admin_Settings
     public function renderApiKeyInput()
     {
         $options = get_option($this->plugin_name . '-settings');
-        echo "<input name='". $this->plugin_name ."-settings[gmap_api_key]' type='text' value='" . esc_attr($options['gmap_api_key']) . "' />";
+        echo "<input name='". $this->plugin_name ."-settings[gmap_api_key]' type='text' value='" . esc_attr($options['gmap_api_key'] ?? '') . "' />";
+    }
+
+    public function renderUpdaterAccessTokenInput()
+    {
+        $options = get_option($this->plugin_name . '-settings');
+        echo "<input name='" . $this->plugin_name . "-settings[municipal_bound_github_access_token]' type='text' value='" . esc_attr($options['municipal_bound_github_access_token'] ?? '') . "' />";
     }
 }
