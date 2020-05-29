@@ -112,14 +112,17 @@ class Municipalities_Boundaries_Public
 			// get key:
 			$options = get_option($this->plugin_name . '-settings');
 			$key = array_key_exists('gmap_api_key', $options) ? $options['gmap_api_key'] : '';
-			wp_enqueue_script('mbpg_map_js', 'https://maps.googleapis.com/maps/api/js?callback=initMBMap&key=' . $key, '', false);
+			if ( strlen( $key ) > 0 ) {
+				// enqueue only if submitted
+				wp_enqueue_script('mbpg_map_js', 'https://maps.googleapis.com/maps/api/js?callback=initMBMap&key=' . $key, '', false);
+			}
 		}
 		$already_run = true;
 		ob_start(); // start html 
 		?>
 		<div class="mmap-wrap">
 			<div id="legend" class="legend-container"></div>
-			<div id="map" class="map-container" data-kmlbase="<?= plugin_dir_url(__FILE__); ?>/kml/"></div>
+			<div id="map" class="map-container" data-kmlbase="<?= plugin_dir_url(__FILE__); ?>kml/"></div>
 		</div>
 		<?php return ob_get_clean();
 	}

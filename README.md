@@ -15,4 +15,4 @@ This plugin renders current Cyprus Municipal Boundaries on Google Map based on a
 *Changelog*
 
 **v1.0**
-* port of yiannisdesp/ucmmap into wordpress plugin
+* based on [yiannisdesp/ucmmap](https://github.com/yiannisdesp/ucmmap) into wordpress plugin
