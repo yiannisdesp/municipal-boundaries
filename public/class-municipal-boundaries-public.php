@@ -107,14 +107,15 @@ class Municipalities_Boundaries_Public
 	{
 		static $already_run = false;
 		if ($already_run !== true) {
-			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/municipal-boundaries-public.css', array(), $this->version, 'all');
-			wp_enqueue_script($this->plugin_name, plugin_dir_url(__FILE__) . 'js/municipal-boundaries-public.js', array('jquery'), $this->version, false);
+			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/municipal-boundaries-public.css',[], $this->version, 'all');
+			wp_enqueue_script($this->plugin_name . '-i18n', plugin_dir_url(__FILE__) . 'js/i18n.js', [], $this->version, false);
+			wp_enqueue_script($this->plugin_name . '-map', plugin_dir_url(__FILE__) . 'js/municipal-boundaries-public.js', [$this->plugin_name . '-i18n'], $this->version, false);
 			// get key:
 			$options = get_option($this->plugin_name . '-settings');
 			$key = array_key_exists('gmap_api_key', $options) ? $options['gmap_api_key'] : '';
 			if ( strlen( $key ) > 0 ) {
 				// enqueue only if submitted
-				wp_enqueue_script('mbpg_map_js', 'https://maps.googleapis.com/maps/api/js?callback=initMBMap&key=' . $key, '', false);
+				wp_enqueue_script('mbpg_map_js', 'https://maps.googleapis.com/maps/api/js?callback=initMunicipalBoundariesMap&key=' . $key, '', false);
 			}
 		}
 		$already_run = true;
