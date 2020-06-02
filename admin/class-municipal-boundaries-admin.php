@@ -6,8 +6,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/admin
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/admin
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/admin
  * @author     Yiannis D <despotis@ucm.org.cy>
  */
-class Municipalities_Boundaries_Admin {
+class Municipal_Boundaries_Admin {
 
 	/**
 	 * The ID of this plugin.
@@ -67,10 +67,10 @@ class Municipalities_Boundaries_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Municipalities_Boundaries_Loader as all of the hooks are defined
+		 * defined in Municipal_Boundaries_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Municipalities_Boundaries_Loader will then create the relationship
+		 * The Municipal_Boundaries_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -90,10 +90,10 @@ class Municipalities_Boundaries_Admin {
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Municipalities_Boundaries_Loader as all of the hooks are defined
+		 * defined in Municipal_Boundaries_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Municipalities_Boundaries_Loader will then create the relationship
+		 * The Municipal_Boundaries_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -105,7 +105,7 @@ class Municipalities_Boundaries_Admin {
 	private function register_settings()
 	{
 		require_once plugin_dir_path( __FILE__ ) . 'class-municipal-boundaries-settings.php';
-		new Municipalities_Boundaries_Admin_Settings($this->plugin_name);
+		new Municipal_Boundaries_Admin_Settings($this->plugin_name);
 	}
 
 }

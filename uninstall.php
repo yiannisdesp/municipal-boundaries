@@ -22,7 +22,7 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
+ * @package    Municipal_Boundaries
  */
 
 // If uninstall not called from WordPress, then exit.

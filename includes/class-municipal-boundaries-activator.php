@@ -6,8 +6,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's activation.
  *
  * @since      1.0.0
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  * @author     Yiannis D <despotis@ucm.org.cy>
  */
-class Municipalities_Boundaries_Activator {
+class Municipal_Boundaries_Activator {
 
 	/**
 	 * Short Description. (use period)

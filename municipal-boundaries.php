@@ -10,7 +10,7 @@
  *
  * @link              https://github.com/yiannisdesp
  * @since             1.0.0
- * @package           Municipalities_Boundaries
+ * @package           Municipal_Boundaries
  *
  * @wordpress-plugin
  * Plugin Name:       Municipal Boundaries
@@ -35,28 +35,28 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'MUNICIPALITIES_BOUNDARIES_VERSION', '1.0.0' );
+define( 'MUNICIPAL_BOUNDARIES_VERSION', '1.0.0' );
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-municipal-boundaries-activator.php
  */
-function activate_municipalities_boundaries() {
+function activate_municipal_boundaries() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-municipal-boundaries-activator.php';
-	Municipalities_Boundaries_Activator::activate();
+	Municipal_Boundaries_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-municipal-boundaries-deactivator.php
  */
-function deactivate_municipalities_boundaries() {
+function deactivate_municipal_boundaries() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-municipal-boundaries-deactivator.php';
-	Municipalities_Boundaries_Deactivator::deactivate();
+	Municipal_Boundaries_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_municipalities_boundaries' );
-register_deactivation_hook( __FILE__, 'deactivate_municipalities_boundaries' );
+register_activation_hook( __FILE__, 'activate_municipal_boundaries' );
+register_deactivation_hook( __FILE__, 'deactivate_municipal_boundaries' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -73,10 +73,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-municipal-boundaries.php';
  *
  * @since    1.0.0
  */
-function run_municipalities_boundaries() {
+function run_municipal_boundaries() {
 
-	$plugin = new Municipalities_Boundaries();
+	$plugin = new Municipal_Boundaries();
 	$plugin->run();
 
 }
-run_municipalities_boundaries();
+run_municipal_boundaries();

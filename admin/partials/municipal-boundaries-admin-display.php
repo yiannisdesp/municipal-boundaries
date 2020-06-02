@@ -8,8 +8,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/admin/partials
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/admin/partials
  */
 ?>
 

@@ -6,8 +6,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/public
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the public-facing stylesheet and JavaScript.
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/public
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/public
  * @author     Yiannis D <despotis@ucm.org.cy>
  */
-class Municipalities_Boundaries_Public
+class Municipal_Boundaries_Public
 {
 
 	/**
@@ -53,7 +53,7 @@ class Municipalities_Boundaries_Public
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-		add_shortcode('municipal-boundaries-map', [$this, 'register_municipalities_boundaries_map_shortcode']);
+		add_shortcode('municipal-boundaries-map', [$this, 'register_municipal_boundaries_map_shortcode']);
 	}
 
 	/**
@@ -68,10 +68,10 @@ class Municipalities_Boundaries_Public
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Municipalities_Boundaries_Loader as all of the hooks are defined
+		 * defined in Municipal_Boundaries_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Municipalities_Boundaries_Loader will then create the relationship
+		 * The Municipal_Boundaries_Loader will then create the relationship
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -91,10 +91,10 @@ class Municipalities_Boundaries_Public
 		 * This function is provided for demonstration purposes only.
 		 *
 		 * An instance of this class should be passed to the run() function
-		 * defined in Municipalities_Boundaries_Loader as all of the hooks are defined
+		 * defined in Municipal_Boundaries_Loader as all of the hooks are defined
 		 * in that particular class.
 		 *
-		 * The Municipalities_Boundaries_Loader will then create the relationships
+		 * The Municipal_Boundaries_Loader will then create the relationships
 		 * between the defined hooks and the functions defined in this
 		 * class.
 		 */
@@ -103,7 +103,7 @@ class Municipalities_Boundaries_Public
 		
 	}
 
-	public function register_municipalities_boundaries_map_shortcode()
+	public function register_municipal_boundaries_map_shortcode()
 	{
 		static $already_run = false;
 		if ($already_run !== true) {

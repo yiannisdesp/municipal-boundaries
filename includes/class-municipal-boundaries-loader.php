@@ -6,8 +6,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  * @author     Yiannis D <despotis@ucm.org.cy>
  */
-class Municipalities_Boundaries_Loader {
+class Municipal_Boundaries_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

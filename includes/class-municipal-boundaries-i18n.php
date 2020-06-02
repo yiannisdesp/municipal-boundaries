@@ -9,8 +9,8 @@
  * @link       https://github.com/yiannisdesp
  * @since      1.0.0
  *
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Municipalities_Boundaries
- * @subpackage Municipalities_Boundaries/includes
+ * @package    Municipal_Boundaries
+ * @subpackage Municipal_Boundaries/includes
  * @author     Yiannis D <despotis@ucm.org.cy>
  */
-class Municipalities_Boundaries_i18n {
+class Municipal_Boundaries_i18n {
 
 
 	/**

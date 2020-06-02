@@ -1,6 +1,6 @@
 <?php
 
-class Municipalities_Boundaries_Admin_Settings
+class Municipal_Boundaries_Admin_Settings
 {
 
     /**
