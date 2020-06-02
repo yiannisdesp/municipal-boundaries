@@ -4,12 +4,12 @@
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="nicosiaLayer">
-		<name>Δήμοι Λευκωσίας</name>
+	<Document id="lefkosiaKML">
+		<name><![CDATA[municipalities_in_nicosia_district]]></name>
 		<open>1</open>
 		<description></description>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>50007814</color>
 				<colorMode>normal</colorMode>
@@ -17,13 +17,13 @@
 				<outline>10</outline>
 			</PolyStyle>
 		</Style>
-		<Folder id="nicosia-municipalities-layer">
-			<name>ΔΗΜΟΙ ΛΕΥΚΩΣΙΑΣ</name>
+		<Folder id="lefkosia-municipalities-layer">
+			<name><![CDATA[lefkosia_municipalities]]></name>
 			<Placemark id="ID_00474">
-				<name>ΔΗΜΟΣ ΑΓΙΟΥ ΔΟΜΕΤΙΟΥ</name>
+				<name><![CDATA[agios_dometios_title]]></name>
+				<description><![CDATA[agios_dometios_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -36,17 +36,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10474">
-				<name>ΔΗΜΟΣ ΑΓΙΟΥ ΔΟΜΕΤΙΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00472">
-				<name>ΔΗΜΟΣ ΑΓΛΑΝΤΖΙΑΣ</name>
+				<name><![CDATA[aglantzia_title]]></name>
+				<description><![CDATA[aglantzia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -59,23 +53,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10472">
-				<name>ΔΗΜΟΣ ΑΓΛΑΝΤΖΙΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10477">
-				<name>ΔΗΜΟΣ ΓΕΡΙΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00477">
-				<name>ΔΗΜΟΣ ΓΕΡΙΟΥ</name>
+				<name><![CDATA[geri_title]]></name>
+				<description><![CDATA[geri_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -89,10 +71,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00486">
-				<name>ΔΗΜΟΣ ΕΓΚΩΜΗΣ</name>
+				<name><![CDATA[egkomi_title]]></name>
+				<description><![CDATA[egkomi_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -105,23 +87,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10486">
-				<name>ΔΗΜΟΣ ΕΓΚΩΜΗΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10478">
-				<name>ΔΗΜΟΣ ΙΔΑΛΙΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00478">
-				<name>ΔΗΜΟΣ ΙΔΑΛΙΟΥ</name>
+				<name><![CDATA[dali_title]]></name>
+				<description><![CDATA[dali_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -134,17 +104,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10424">
-				<name>ΔΗΜΟΣ ΚΥΘΡΕΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00424">
-				<name>ΔΗΜΟΣ ΚΥΘΡΕΑΣ</name>
+				<name><![CDATA[kythrea_title]]></name>
+				<description><![CDATA[kythrea_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -158,10 +122,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00475">
-				<name>ΔΗΜΟΣ ΛΑΚΑΤΑΜΕΙΑΣ</name>
+				<name><![CDATA[lakatamia_title]]></name>
+				<description><![CDATA[lakatamia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -174,23 +138,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10475">
-				<name>ΔΗΜΟΣ ΛΑΚΑΤΑΜΕΙΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10476">
-				<name>ΔΗΜΟΣ ΛΑΤΣΙΩΝ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00476">
-				<name>ΔΗΜΟΣ ΛΑΤΣΙΩΝ</name>
+				<name><![CDATA[latsia_title]]></name>
+				<description><![CDATA[latsia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -203,17 +155,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10471">
-				<name>ΔΗΜΟΣ ΛΕΥΚΩΣΙΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00471">
-				<name>ΔΗΜΟΣ ΛΕΥΚΩΣΙΑΣ</name>
+				<name><![CDATA[lefkosia_title]]></name>
+				<description><![CDATA[lefkosia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -227,10 +173,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00480">
-				<name>ΔΗΜΟΣ ΜΟΡΦΟΥ</name>
+				<name><![CDATA[morfou_title]]></name>
+				<description><![CDATA[morfou_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -243,17 +189,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10480">
-				<name>ΔΗΜΟΣ ΜΟΡΦΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00473">
-				<name>ΔΗΜΟΣ ΣΤΡΟΒΟΛΟΥ</name>
+				<name><![CDATA[strovolos_title]]></name>
+				<description><![CDATA[strovolos_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -266,17 +206,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10473">
-				<name>ΔΗΜΟΣ ΣΤΡΟΒΟΛΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00479">
-				<name>ΔΗΜΟΣ ΤΣΕΡΙΟΥ</name>
+				<name><![CDATA[tseri_title]]></name>
+				<description><![CDATA[tseri_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -289,12 +223,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10479">
-				<name>ΔΗΜΟΣ ΤΣΕΡΙΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 		</Folder>
 	</Document>
 </kml>

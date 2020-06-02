@@ -4,11 +4,11 @@
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="famagustaLayer">
-		<name>Municipalities in Paphos District</name>
+	<Document id="paphosLayer">
+		<name><![CDATA[municipalities_in_paphos_district]]></name>
 		<open>1</open>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>5014F0FA</color>
 				<colorMode>normal</colorMode>
@@ -16,12 +16,13 @@
 				<outline>10</outline>
 			</PolyStyle>
 		</Style>
-		<Folder id="famagusta-municipalities-layer">
-			<name>PAPHOS MUNICIPALITIES</name>
+		<Folder id="paphos-municipalities-layer">
+			<name><![CDATA[paphos_municipalities]]></name>
 			<Placemark id="ID_20018">
-				<name>ΔΗΜΟΣ ΓΕΡΟΣΚΗΠΟΥ</name>
+				<name><![CDATA[geroskipou_title]]></name>
+				<description><![CDATA[geroskipou_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -34,15 +35,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_30018">
-				<name>ΔΗΜΟΣ ΓΕΡΟΣΚΗΠΟΥ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00165">
-				<name>ΔΗΜΟΣ ΠΑΦΟΥ</name>
+				<name><![CDATA[paphos_title]]></name>
+				<description><![CDATA[paphos_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -55,20 +52,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10165">
-				<name>ΔΗΜΟΣ ΠΑΦΟΥ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
-			<Placemark id="ID_10167">
-				<name>ΔΗΜΟΣ ΠΕΓΕΙΑΣ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00168">
-				<name>ΔΗΜΟΣ ΠOΛΙΣ ΧΡΥΣΟΧΟΥΣ</name>
+				<name><![CDATA[poli_chrysochous_title]]></name>
+				<description><![CDATA[poli_chrysochous_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -81,16 +69,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10168">
-				<name>ΔΗΜΟΣ ΠOΛΙΣ ΧΡΥΣΟΧΟΥΣ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00167">
-				<name>ΔΗΜΟΣ ΠΕΓΕΙΑΣ</name>
+				<name><![CDATA[pegia_title]]></name>
+				<description><![CDATA[pegia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -129,12 +112,6 @@
 						</outerBoundaryIs>
 					</Polygon>
 				</MultiGeometry>
-			</Placemark>
-			<Placemark id="ID_10167">
-				<name>ΔΗΜΟΣ ΠΕΓΕΙΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#IconStyle10</styleUrl>
 			</Placemark>
 		</Folder>
 	</Document>

@@ -4,11 +4,11 @@
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="keryneiaLayer">
-		<name>Δήμοι Κερύνειας</name>
+	<Document id="keryneiaKML">
+		<name><![CDATA[municipalities_in_keryneia_district]]></name>
 		<open>1</open>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>501411FF</color>
 				<colorMode>normal</colorMode>
@@ -17,11 +17,12 @@
 			</PolyStyle>
 		</Style>
 		<Folder id="keryneia-municipalities-layer">
-			<name>ΔΗΜΟΙ ΚΕΡΥΝΕΙΑΣ</name>
+			<name><![CDATA[keryneia_municipalities]]></name>
 			<Placemark id="ID_00043">
-				<name>ΔΗΜΟΣ ΚΑΡΑΒΑ</name>
+				<name><![CDATA[karavas_title]]></name>
+				<description><![CDATA[karavas_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -52,20 +53,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10043">
-				<name>ΔΗΜΟΣ ΚΑΡΑΒΑ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
-			<Placemark id="ID_10044">
-				<name>ΔΗΜΟΣ ΛΑΠΗΘΟΥ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00044">
-				<name>ΔΗΜΟΣ ΛΑΠΗΘΟΥ</name>
+				<name><![CDATA[lapithos_title]]></name>
+				<description><![CDATA[lapithos_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -78,15 +70,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10042">
-				<name>ΔΗΜΟΣ ΚΕΡΥΝΕΙΑΣ</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00042">
-				<name>ΔΗΜΟΣ ΚΕΡΥΝΕΙΑΣ</name>
+				<name><![CDATA[keryneia_title]]></name>
+				<description><![CDATA[keryneia_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>

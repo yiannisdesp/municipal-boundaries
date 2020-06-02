@@ -3,12 +3,12 @@
 	xmlns="http://www.opengis.net/kml/2.2"
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="famagustaLayer">
-		<name>Municipalities in Ammochostos District</name>
+ 	xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
+	<Document id="ammochostosKML">
+		<name><![CDATA[municipalities_in_ammochostos_district]]></name>
 		<open>1</open>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>50000014</color>
 				<colorMode>normal</colorMode>
@@ -17,11 +17,12 @@
 			</PolyStyle>
 		</Style>
 		<Folder id="famagusta-municipalities-layer">
-			<name>AMMOCHOSTOS MUNICIPALITIES</name>
+			<name><![CDATA[ammochostos_municipalities]]></name>
 			<Placemark id="ID_00306">
-				<name>AKANTHOU</name>
+				<name><![CDATA[akanthou_title]]></name>
+				<description><![CDATA[akanthou_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -34,15 +35,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10306">
-				<name>AKANTHOU</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00299">
-				<name>AMMOCHOSTOU</name>
+				<name><![CDATA[ammochostos_title]]></name>
+				<description><![CDATA[ammochostos_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -154,20 +151,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10299">
-				<name>AMMOCHOSTOU</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
-			<Placemark id="ID_10300">
-				<name>AGIA NAPA</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00300">
-				<name>AGIA NAPA</name>
+				<name><![CDATA[agia_napa_title]]></name>
+				<description><![CDATA[agia_napa_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -199,9 +187,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00302">
-				<name>DERYNEIA</name>
+				<name><![CDATA[deryneia_title]]></name>
+				<description><![CDATA[deryneia_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -214,20 +203,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10302">
-				<name>DERYNEIA</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
-			<Placemark id="ID_10305">
-				<name>LEFKONOIKO</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00305">
-				<name>LEFKONOIKO</name>
+				<name><![CDATA[lefkoniko_title]]></name>
+				<description><![CDATA[lefkoniko_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -240,15 +220,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10304">
-				<name>LYSI</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00304">
-				<name>LYSI</name>
+				<name><![CDATA[lysi_title]]></name>
+				<description><![CDATA[lysi_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -261,15 +237,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10301">
-				<name>PARALIMNI</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
-			</Placemark>
 			<Placemark id="ID_00301">
-				<name>PARALIMNI</name>
+				<name><![CDATA[paralimni_title]]></name>
+				<description><![CDATA[paralimni_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -292,9 +264,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00303">
-				<name>SOTIRA</name>
+				<name><![CDATA[sotira_title]]></name>
+				<description><![CDATA[sotira_desc]]></description>
 				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -324,11 +297,6 @@
 						</outerBoundaryIs>
 					</Polygon>
 				</MultiGeometry>
-			</Placemark>
-			<Placemark id="ID_10303">
-				<name>SOTIRA</name>
-				<Snippet></Snippet>
-				<styleUrl>#documentStyle</styleUrl>
 			</Placemark>
 		</Folder>
 	</Document>

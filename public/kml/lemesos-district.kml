@@ -4,12 +4,12 @@
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="limassolLayer">
-		<name>Municipalities in Limassol District</name>
+	<Document id="lemesosLayer">
+		<name><![CDATA[municipalities_in_limassol_district]]></name>
 		<open>1</open>
 		<description></description>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>50143C82</color>
 				<colorMode>normal</colorMode>
@@ -18,12 +18,12 @@
 			</PolyStyle>
 		</Style>
 		<Folder id="limassol-municipalities-layer">
-			<name>LIMASSOL MUNICIPALITIES</name>
+			<name><![CDATA[limassol_municipalities]]></name>
 			<Placemark id="ID_20143">
-				<name>AGIOS ATHANASIOS</name>
+				<name><![CDATA[agios_athanasios_title]]></name>
+				<description><![CDATA[agios_athanasios_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -36,23 +36,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_30143">
-				<name>AGIOS ATHANASIOS</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10557">
-				<name>GERMASOGEIA</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00557">
-				<name>GERMASOGEIA</name>
+				<name><![CDATA[germasogeia_title]]></name>
+				<description><![CDATA[germasogeia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -66,10 +54,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00559">
-				<name>KATO POLEMIDIA</name>
+				<name><![CDATA[kato_polemidia_title]]></name>
+				<description><![CDATA[kato_polemidia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -82,23 +70,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10559">
-				<name>KATO POLEMIDIA</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10566">
-				<name>LEMESOS</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00566">
-				<name>LEMESOS</name>
+				<name><![CDATA[lemesos_title]]></name>
+				<description><![CDATA[lemesos_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -111,17 +87,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10565">
-				<name>MESA GEITONIA</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00565">
-				<name>MESA GEITONIA</name>
+				<name><![CDATA[mesa_geitonia_title]]></name>
+				<description><![CDATA[mesa_geitonia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -134,17 +104,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10558">
-				<name>YPSONAS</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00558">
-				<name>YPSONAS</name>
+				<name><![CDATA[ypsonas_title]]></name>
+				<description><![CDATA[ypsonas_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>

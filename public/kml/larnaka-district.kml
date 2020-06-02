@@ -5,11 +5,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 	<Document id="larnacaLayer">
-		<name>Δήμοι Λάρνακας</name>
+		<name><![CDATA[municipalities_in_larnaka_district]]></name>
 		<open>1</open>
 		<description></description>
 		<Snippet></Snippet>
-		<Style id="documentStyle">
+		<Style id="style1">
 			<PolyStyle>
 				<color>50F00014</color>
 				<colorMode>normal</colorMode>
@@ -17,19 +17,13 @@
 				<outline>10</outline>
 			</PolyStyle>
 		</Style>
-		<Folder id="larnaca-municipalities-layer">
-			<name>ΔΗΜΟΙ ΛΑΡΝΑΚΑΣ</name>
-			<Placemark id="ID_10324">
-				<name>ΔΗΜΟΣ ΑΘΙΕΝΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
+		<Folder id="larnaka-municipalities-layer">
+			<name><![CDATA[larnaka_municipalities]]></name>
 			<Placemark id="ID_00324">
-				<name>ΔΗΜΟΣ ΑΘΙΕΝΟΥ</name>
+				<name><![CDATA[athienou_title]]></name>
+				<description><![CDATA[athienou_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -42,17 +36,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10321">
-				<name>ΔΗΜΟΣ ΑΡΑΔΙΠΠΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00321">
-				<name>ΔΗΜΟΣ ΑΡΑΔΙΠΠΟΥ</name>
+				<name><![CDATA[aradippou_title]]></name>
+				<description><![CDATA[aradippou_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -66,10 +54,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00323">
-				<name>ΔΗΜΟΣ ΔΡΟΜΟΛΑΞΙΑΣ-ΜΕΝΕΟΥ</name>
+				<name><![CDATA[dromolaxia_meneou_title]]></name>
+				<description><![CDATA[dromolaxia_meneou_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -82,17 +70,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10323">
-				<name>ΔΗΜΟΣ ΔΡΟΜΟΛΑΞΙΑΣ-ΜΕΝΕΟΥ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00320">
-				<name>ΔΗΜΟΣ ΛΑΡΝΑΚΑΣ</name>
+				<name><![CDATA[larnaka_title]]></name>
+				<description><![CDATA[larnaka_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -105,23 +87,11 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10320">
-				<name>ΔΗΜΟΣ ΛΑΡΝΑΚΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
-			<Placemark id="ID_10322">
-				<name>ΔΗΜΟΣ ΛΙΒΑΔΙΩΝ ΛΑΡΝΑΚΑΣ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 			<Placemark id="ID_00322">
-				<name>ΔΗΜΟΣ ΛΙΒΑΔΙΩΝ ΛΑΡΝΑΚΑΣ</name>
+				<name><![CDATA[livadia_title]]></name>
+				<description><![CDATA[livadia_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -135,10 +105,10 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00325">
-				<name>ΔΗΜΟΣ ΠΑΝΩ ΛΕΥΚΑΡΩΝ</name>
+				<name><![CDATA[pano_lefkara_title]]></name>
+				<description><![CDATA[pano_lefkara_desc]]></description>
 				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
+				<styleUrl>#style1</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -151,12 +121,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<Placemark id="ID_10325">
-				<name>ΔΗΜΟΣ ΠΑΝΩ ΛΕΥΚΑΡΩΝ</name>
-				<Snippet></Snippet>
-				<description></description>
-				<styleUrl>#documentStyle</styleUrl>
-							</Placemark>
 		</Folder>
 	</Document>
 </kml>
