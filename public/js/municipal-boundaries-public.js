@@ -3,15 +3,14 @@ var __municipal_boundaries_map = (function(){
     var map,
     infowindow,
     marker,
-    local = (window.location.hostname).indexOf('local') > -1 ? true : false,
-    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
+    dBaseUrl = __mb_map_conf.kmlBase,
     kmlDataSources = {
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=v1',
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=v1',
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=v1',
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=v1',
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=v1',
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=v1',
     },
     layers = {},
     districts_coords = {
@@ -91,7 +90,7 @@ var __municipal_boundaries_map = (function(){
         }, 500);
     };
     return {init: render};
-})();
+})(__mb_map_conf);
 
 function initMunicipalBoundariesMap(){
     __municipal_boundaries_map.init();
