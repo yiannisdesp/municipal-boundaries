@@ -3,7 +3,7 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://github.com/yiannisdesp
+ * @link       https://profiles.wordpress.org/yiannisdesp4/
  * @since      1.0.0
  *
  * @package    Municipal_Boundaries

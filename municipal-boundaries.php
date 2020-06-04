@@ -8,17 +8,17 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://github.com/yiannisdesp
+ * @link              https://profiles.wordpress.org/yiannisdesp4/
  * @since             1.0.0
  * @package           Municipal_Boundaries
  *
  * @wordpress-plugin
  * Plugin Name:       Municipal Boundaries
- * Plugin URI:        https://github.com/yiannisdesp/municipal-boundaries
+ * Plugin URI:        https://profiles.wordpress.org/yiannisdesp4//municipal-boundaries
  * Description:       Renders current Municipal Boundaries on Google Map based on KML data.
  * Version:           1.0.0
  * Author:            Yiannis D
- * Author URI:        https://github.com/yiannisdesp
+ * Author URI:        https://profiles.wordpress.org/yiannisdesp4/
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       municipal-boundaries
