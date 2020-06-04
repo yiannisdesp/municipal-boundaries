@@ -49,7 +49,7 @@ class Municipal_Boundaries_Admin_Settings
     {
         register_setting(
             $this->plugin_name . '-opt',
-            $this->plugin_name . '-settings',
+            $this->plugin_name . '-settings'
         );
 
         add_settings_section(

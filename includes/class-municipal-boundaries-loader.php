@@ -19,7 +19,7 @@
  *
  * @package    Municipal_Boundaries
  * @subpackage Municipal_Boundaries/includes
- * @author     Yiannis D <despotis@ucm.org.cy>
+ * @author     Yiannis D
  */
 class Municipal_Boundaries_Loader {
 

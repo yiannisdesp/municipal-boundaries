@@ -18,7 +18,7 @@
  *
  * @package    Municipal_Boundaries
  * @subpackage Municipal_Boundaries/public
- * @author     Yiannis D <despotis@ucm.org.cy>
+ * @author     Yiannis D
  */
 class Municipal_Boundaries_Public
 {
