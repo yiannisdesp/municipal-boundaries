@@ -5,12 +5,13 @@ var __municipal_boundaries_map = (function(){
     marker,
     dBaseUrl = __mb_map_conf.kmlBase,
     kmlDataSources = {
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=v1',
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=v1',
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=v1',
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=v1',
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=v1',
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=v1',
+        districts: dBaseUrl + 'districts.kml?t=v1.1',
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=v1.1',
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=v1.1',
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=v1.1',
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=v1.1',
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=v1.1',
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=v1.1',
     },
     layers = {},
     districts_coords = {
@@ -44,14 +45,6 @@ var __municipal_boundaries_map = (function(){
                 preserveViewport: true,
                 map: map
             });
-            // generate legend html
-            legendHTML += `
-            <div class="item">
-                <a href="#" class="maplink d-${k}" data-lat="${districts_coords[k].lat}" data-lng="${districts_coords[k].lng}">
-                    ${__municipal_boundaries_i18n.translate(k)}
-                </a>
-            </div>
-            `;
 
             layers[k].addListener('click', function (e) {
                 if (infowindow) infowindow.close();
@@ -71,6 +64,17 @@ var __municipal_boundaries_map = (function(){
                 map.panTo(marker.getPosition());
             });
 
+            if ( k === 'districts' ) continue;
+
+            // generate legend html
+            legendHTML += `
+            <div class="item">
+                <a href="#" class="maplink d-${k}" data-lat="${districts_coords[k].lat}" data-lng="${districts_coords[k].lng}">
+                    ${__municipal_boundaries_i18n.translate(k)}
+                </a>
+            </div>
+            `;
+            
         }
 		legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><a href="https://www.data.gov.cy/dataset/διοικητικά-όρια-ενοριών-διοικητικός-χάρτης" target="_blank" title="Διοικητικά Όρια Ενοριών - Διοικητικός Χάρτης"><i>Boundary dataset based on OpenDataCy</i></a></div>';
         // render generated legend markup
