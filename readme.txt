@@ -1,6 +1,6 @@
 === Municipal Boundaries ===
 Contributors: yiannisdesp4
-Tags: cyprus,municipalities,map,boundaries,googlemap
+Tags: cyprus,municipalities,map,boundaries,googlemap,ucm
 Requires at least: 4.7
 Tested up to: 5.4
 Stable tag: 5.4
@@ -8,11 +8,11 @@ Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Renders current Cyprus Municipal Boundaries on a Google Map. Dataset is based on an optimised set of KML data from OpenDataCy and all related data are provided AS-IS.
+Renders current Cyprus Municipal Boundaries on a Google Map. Dataset is based on an optimised set of KML data from OpenDataCy (Dept. of Land & Surveys & Dept. of Town Planning and Housing) and all related data are provided AS-IS.
 
 == Description ==
 
-*Municipal Boundaries* is a simple plugin that can render current Cyprus Municipal Boundaries on a Google Map. The Dataset is provided as-is and is based on an optimised set of KML data from [OpenDataCy](https://www.data.gov.cy/dataset/διοικητικά-όρια-ενοριών-διοικητικός-χάρτης).  
+*Municipal Boundaries* is a simple plugin that can render current Cyprus Municipal Boundaries (as of 05/2020) on a Google Map. The **dataset is provided AS-IS** and is based on an optimised set of KML data from [OpenDataCy](https://www.data.gov.cy). For more information about the data, please refer to their respective pages [Provincial Administrative Boundaries](https://www.data.gov.cy/node/1012?language=en) and [Map of the Borders of Local Authorities of the Republic of Cyprus](https://www.data.gov.cy/node/1537?language=en) at OpenDataCy.
  
 Languages supported: Greek, English  
   
@@ -40,5 +40,10 @@ Yes.
 
 == Changelog ==
 
-= 1.0 =
+= 1.1.0 =
+* District boundaries are now rendered.
+* Added KML Base URL option in settings in case of remote kml files loading.
+* Improved KML Data.
+
+= 1.0.0 =
 * Initial release.
