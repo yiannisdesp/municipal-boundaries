@@ -107,6 +107,7 @@ class Municipal_Boundaries_Public
 	{
 		static $already_run = false;
 		if ($already_run !== true) {
+			$options = get_option($this->plugin_name . '-settings');
 			wp_enqueue_style($this->plugin_name, plugin_dir_url(__FILE__) . 'css/municipal-boundaries-public.css',[], $this->version, 'all');
 			wp_enqueue_script($this->plugin_name . '-i18n', plugin_dir_url(__FILE__) . 'js/i18n.js', [], $this->version, false);
 			wp_localize_script($this->plugin_name . '-i18n', '__mb_i18n_conf', [
@@ -114,10 +115,9 @@ class Municipal_Boundaries_Public
 			]);
 			wp_enqueue_script($this->plugin_name . '-map', plugin_dir_url(__FILE__) . 'js/municipal-boundaries-public.js', [$this->plugin_name . '-i18n'], $this->version, false);
 			wp_localize_script($this->plugin_name . '-map', '__mb_map_conf', [
-				'kmlBase' => plugin_dir_url(__FILE__) . 'kml/',
+				'kmlBase' => array_key_exists('remote_kml_base', $options) ? rtrim($options['remote_kml_base'], '/') . '/' : plugin_dir_url(__FILE__) . 'kml/',
 			]);
 			// get key:
-			$options = get_option($this->plugin_name . '-settings');
 			$key = array_key_exists('gmap_api_key', $options) ? $options['gmap_api_key'] : '';
 			if ( strlen( $key ) > 0 ) {
 				// enqueue only if submitted
@@ -125,7 +125,7 @@ class Municipal_Boundaries_Public
 			}
 		}
 		$already_run = true;
-		ob_start(); // start html 
+		ob_start();
 		?>
 		<div class="mmap-wrap">
 			<div id="legend" class="legend-container"></div>

@@ -69,6 +69,14 @@ class Municipal_Boundaries_Admin_Settings
             $this->plugin_name . '-opt-section'
         );
 
+        add_settings_field(
+            'remote_kml_base',
+            'Optionally set a remote KML base URL',
+            [$this, 'renderRemoteKMLBase'],
+            $this->plugin_name . '-opt',
+            $this->plugin_name . '-opt-section'
+        );
+
         
     }
 
@@ -85,6 +93,12 @@ class Municipal_Boundaries_Admin_Settings
     {
         $options = get_option($this->plugin_name . '-settings');
         echo "<input name='". $this->plugin_name ."-settings[gmap_api_key]' type='text' value='" . esc_attr($options['gmap_api_key'] ?? '') . "' />";
+    }
+
+    public function renderRemoteKMLBase()
+    {
+        $options = get_option($this->plugin_name . '-settings');
+        echo "<input name='". $this->plugin_name ."-settings[remote_kml_base]' type='text' value='" . esc_attr($options['remote_kml_base'] ?? '') . "' />";
     }
 
     
