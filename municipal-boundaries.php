@@ -16,7 +16,7 @@
  * Plugin Name:       Municipal Boundaries
  * Plugin URI:        https://profiles.wordpress.org/yiannisdesp4//municipal-boundaries
  * Description:       Renders current Municipal Boundaries on Google Map based on KML data.
- * Version:           1.1.0
+ * Version:           1.1.2
  * Author:            Yiannis D
  * Author URI:        https://profiles.wordpress.org/yiannisdesp4/
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'MUNICIPAL_BOUNDARIES_VERSION', '1.1.0' );
+define( 'MUNICIPAL_BOUNDARIES_VERSION', '1.1.2' );
 
 /**
  * The code that runs during plugin activation.
