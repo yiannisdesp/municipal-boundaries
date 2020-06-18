@@ -5,13 +5,13 @@ var __municipal_boundaries_map = (function(){
     marker,
     dBaseUrl = __mb_map_conf.kmlBase,
     kmlDataSources = {
-        districts: dBaseUrl + 'districts.kml?t=v1.1',
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=v1.1',
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=v1.1',
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=v1.1',
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=v1.1',
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=v1.1',
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=v1.1',
+        districts: dBaseUrl + 'districts.kml?t=v1.2',
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=v1.2',
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=v1.2',
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=v1.2',
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=v1.2',
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=v1.2',
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=v1.2',
     },
     layers = {},
     districts_coords = {
@@ -76,7 +76,7 @@ var __municipal_boundaries_map = (function(){
             `;
             
         }
-		legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><a href="https://www.data.gov.cy/dataset/διοικητικά-όρια-ενοριών-διοικητικός-χάρτης" target="_blank" title="Διοικητικά Όρια Ενοριών - Διοικητικός Χάρτης"><i>Boundary dataset based on OpenDataCy</i></a></div>';
+        legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><a href="https://www.data.gov.cy/node/1537?language=en" target="_blank" title="Χάρτης Ορίων Τοπικών Αρχών της Κυπριακής Δημοκρατίας"><i>Boundary dataset based on OpenDataCy</i></a></div>';
         // render generated legend markup
         document.getElementById('legend').innerHTML = legendHTML;
         // bind generated links with click event

@@ -114,8 +114,13 @@ class Municipal_Boundaries_Public
 				'imgBase' => plugin_dir_url(__FILE__) . 'img/',
 			]);
 			wp_enqueue_script($this->plugin_name . '-map', plugin_dir_url(__FILE__) . 'js/municipal-boundaries-public.js', [$this->plugin_name . '-i18n'], $this->version, false);
+			if ( array_key_exists('remote_kml_base', $options) && strlen(trim($options['remote_kml_base'])) > 4 && wp_http_validate_url($options['remote_kml_base']) ) {
+				$kmlBase = rtrim(trim($options['remote_kml_base']), '/') . '/';
+			} else {
+				$kmlBase = plugin_dir_url(__FILE__) . 'kml/';
+			}
 			wp_localize_script($this->plugin_name . '-map', '__mb_map_conf', [
-				'kmlBase' => array_key_exists('remote_kml_base', $options) ? rtrim($options['remote_kml_base'], '/') . '/' : plugin_dir_url(__FILE__) . 'kml/',
+				'kmlBase' => $kmlBase,
 			]);
 			// get key:
 			$key = array_key_exists('gmap_api_key', $options) ? $options['gmap_api_key'] : '';

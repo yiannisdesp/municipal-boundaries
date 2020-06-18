@@ -12,7 +12,7 @@ Renders current Cyprus Municipal Boundaries on a Google Map. Dataset is based on
 
 == Description ==
 
-*Municipal Boundaries* is a simple plugin that can render current Cyprus Municipal Boundaries (as of 05/2020) on a Google Map. The **dataset is provided AS-IS** and is based on an optimised set of KML data from [OpenDataCy](https://www.data.gov.cy). For more information about the data, please refer to their respective pages [Provincial Administrative Boundaries](https://www.data.gov.cy/node/1012?language=en) and [Map of the Borders of Local Authorities of the Republic of Cyprus](https://www.data.gov.cy/node/1537?language=en) at OpenDataCy.
+*Municipal Boundaries* is a simple plugin that renders current Cyprus Municipal Boundaries (as of 05/2020) on a Google Map. The **dataset is provided AS-IS** and is based on an optimised set of KML data from [OpenDataCy](https://www.data.gov.cy). For more information about the data, please refer to their respective pages [Provincial Administrative Boundaries](https://www.data.gov.cy/node/1012?language=en) and [Map of the Borders of Local Authorities of the Republic of Cyprus](https://www.data.gov.cy/node/1537?language=en) at OpenDataCy.
  
 Languages supported: Greek, English  
   
