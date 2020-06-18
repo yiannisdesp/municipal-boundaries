@@ -125,8 +125,9 @@ class Municipal_Boundaries_Public
 			// get key:
 			$key = array_key_exists('gmap_api_key', $options) ? $options['gmap_api_key'] : '';
 			if ( strlen( $key ) > 0 ) {
-				// enqueue only if submitted
 				wp_enqueue_script('mbpg_map_js', 'https://maps.googleapis.com/maps/api/js?callback=initMunicipalBoundariesMap&key=' . $key, '', false);
+			} else {
+				wp_add_inline_script($this->plugin_name . '-map', 'setTimeout(initMunicipalBoundariesMap, 2500);');
 			}
 		}
 		$already_run = true;
