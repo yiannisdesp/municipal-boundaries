@@ -1,9 +1,9 @@
 === Municipal Boundaries ===
 Contributors: yiannisdesp4
-Tags: cyprus,municipalities,map,boundaries,googlemap,ucm
+Tags: cyprus, municipalities, map, boundaries, googlemap, ucm
 Requires at least: 4.7
 Tested up to: 5.4
-Stable tag: 5.4
+Stable tag: 1.1.3
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -39,6 +39,13 @@ Yes.
 1. Basic demo UI.
 
 == Changelog ==
+
+= 1.1.3 =
+* Data updated.
+
+= 1.1.2 =
+* Bugfixes.
+* Improved KML Data.
 
 = 1.1.0 =
 * District boundaries are now rendered.
