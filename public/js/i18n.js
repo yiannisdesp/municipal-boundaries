@@ -363,7 +363,7 @@ var __municipal_boundaries_i18n = (function(){
             en: `<img src="${imgsbase}aglantzia.png" style="width:100px;margin:0 auto;display:block;"><br><p>P.O.Box: 20259<br>
             2150 Aglantzia<br>
             Cyprus<br>
-            <b>Mayor:</b> Marios Hirides<br>
+            <b>Mayor:</b> Andreas Konstantinou<br>
             <b>Tel.:</b> +357 22462233<br>
             <b>Fax:</b> +357 22455799<br>
             <b>Email:</b> <a href="mailto:info@aglantzia.org.cy">info@aglantzia.org.cy</a><br>
@@ -371,7 +371,7 @@ var __municipal_boundaries_i18n = (function(){
             el: `<img src="${imgsbase}aglantzia.png" style="width:100px;margin:0 auto;display:block;"><br><p>Τ.Θ.: 20259<br>
             2150 Αγλαντζιά<br>
             Κύπρος<br>
-            <b>Δήμαρχος:</b> Μάριος Χειρίδης<br>
+            <b>Δήμαρχος:</b> Ανδρέας Κωνσταντίνου<br>
             <b>Τηλ.:</b> +357 22462233<br>
             <b>Φαξ:</b> +357 22455799<br>
             <b>Email:</b> <a href="mailto:info@aglantzia.org.cy">info@aglantzia.org.cy</a><br>
